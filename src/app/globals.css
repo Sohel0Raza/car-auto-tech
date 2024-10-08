@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-outline {
+  @apply border-[1px] text-white text-base border-[#F63B56] font-semibold px-5 py-2 hover:bg-[#F63B56] hover:border-transparent transition-all duration-300 ease-in-out active:scale-110;
+}
+
+.pointer:before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  border-left: 30px solid black;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+}
