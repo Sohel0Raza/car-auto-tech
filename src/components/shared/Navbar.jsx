@@ -64,7 +64,7 @@ const Navbar = () => {
       {/* navbar */}
       <div
         className={`md:fixed w-full px-5 md:px-14 shadow-2xl transition-all duration-500 ease-in-out text-[#473b3b] ${
-          isScrolled ? "bg-white " : "bg-[#f0ecec] py-3 "
+          isScrolled ? "bg-white" : "bg-[#f0ecec] py-3 "
         }`}
       >
         <nav className="flex justify-between items-center">
