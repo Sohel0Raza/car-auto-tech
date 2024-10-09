@@ -1,4 +1,4 @@
 
 export default function Home() {
-  return <div>hellow world</div>;
+  return <div className="h-screen">hellow world</div>;
 }

@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  overflow-x: hidden;
+}
 .btn-outline {
-  @apply border-[1px] text-white text-base border-[#F63B56] font-semibold px-5 py-2 hover:bg-[#F63B56] hover:border-transparent transition-all duration-300 ease-in-out active:scale-110;
+  @apply border-[1px] text-[#473b3b] text-base border-primary font-semibold px-5 py-2 hover:bg-primary hover:border-transparent transition-all duration-300 ease-in-out active:scale-110;
 }
 
 .pointer:before {
