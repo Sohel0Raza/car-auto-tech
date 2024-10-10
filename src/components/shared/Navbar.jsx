@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {/* navbar */}
       <div
-        className={`md:fixed w-full px-5 md:px-14 shadow-2xl transition-all duration-500 ease-in-out text-[#473b3b] ${
+        className={`md:fixed z-30 w-full px-5 md:px-14 shadow-2xl transition-all duration-500 ease-in-out text-[#473b3b] ${
           isScrolled ? "bg-white" : "bg-[#f0ecec] py-3 "
         }`}
       >
@@ -79,7 +79,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <ul className="flex justify-between items-center space-x-7 ml-10">
+            <ul className="flex justify-between items-center space-x-8 ml-10">
               {navItems.map((item) => (
                 <Link
                   href={item.path}
