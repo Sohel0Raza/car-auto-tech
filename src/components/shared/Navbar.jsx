@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { LuEqual } from "react-icons/lu";
 import { MdOutlineMail } from "react-icons/md";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 
@@ -44,13 +44,18 @@ const Navbar = () => {
             <p className="flex items-center md:px-2">
               <MdOutlineMail className="text-xl mr-2" />
               <span className="font-semibold"> Email:</span>
-              <a className="hover:text-primary" href="mailto:soheldot1239@gmail.com">soheldot1239@gmail.com</a>
+              <a
+                className="hover:text-primary"
+                href="mailto:soheldot1239@gmail.com"
+              >
+                soheldot1239@gmail.com
+              </a>
             </p>
             <div className="flex items-center space-x-4 md:space-x-6 text-base">
-              <FaFacebookF className="cursor-pointer hover:text-primary"/>
-              <FaGoogle className="cursor-pointer hover:text-primary"/>
-              <FaTwitter className="cursor-pointer hover:text-primary"/>
-              <FaLinkedinIn className="cursor-pointer hover:text-primary"/>
+              <FaFacebookF className="cursor-pointer hover:text-primary" />
+              <FaGoogle className="cursor-pointer hover:text-primary" />
+              <FaTwitter className="cursor-pointer hover:text-primary" />
+              <FaLinkedinIn className="cursor-pointer hover:text-primary" />
             </div>
           </div>
           <div className="md:w-1/2 md:text-end text-center">
@@ -64,17 +69,17 @@ const Navbar = () => {
       {/* navbar */}
       <div
         className={`md:fixed z-30 w-full px-5 md:px-14 shadow-2xl transition-all duration-500 ease-in-out text-[#473b3b] ${
-          isScrolled ? "bg-white" : "bg-[#f0ecec] py-3 "
+          isScrolled ? "bg-white" : "bg-[#f0ecec] py-2"
         }`}
       >
         <nav className="flex justify-between items-center">
           <Link href="/">
-            <Image
-              src="/assets/logo.png"
-              alt="Website logo"
-              height={70}
-              width={90}
-            />
+              <Image
+                src="/assets/logo.png"
+                alt="Website logo"
+                width={90}
+                height={60}
+              />
           </Link>
 
           {/* Desktop Navigation */}
@@ -116,7 +121,11 @@ const Navbar = () => {
               <Link
                 href={item.path}
                 key={item.name}
-                className={`${pathName === item.path ? "text-primary" : "text-[#473b3b] hover:text-[#9b8484] transition-all duration-300 ease-in-out"}`}
+                className={`${
+                  pathName === item.path
+                    ? "text-primary"
+                    : "text-[#473b3b] hover:text-[#9b8484] transition-all duration-300 ease-in-out"
+                }`}
               >
                 <li className="uppercase text-base font-semibold">
                   {item.name}

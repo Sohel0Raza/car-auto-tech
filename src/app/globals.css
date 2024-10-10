@@ -17,3 +17,10 @@ body {
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
 }
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important;
+}
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
