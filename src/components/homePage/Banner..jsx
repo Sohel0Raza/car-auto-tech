@@ -14,7 +14,7 @@ const bannerImages = [
 
 const Banner = () => {
   return (
-    <div className="md:pt-14 pb-5">
+    <div className="pb-5">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

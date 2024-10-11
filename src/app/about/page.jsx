@@ -4,7 +4,7 @@ import img2 from "@/../public/assets/images/about_us/person.jpg";
 import { FaHome } from "react-icons/fa";
 const AboutPage = () => {
   return (
-    <div className="md:pt-14">
+    <div>
       <div className="relative">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
           <path
@@ -18,12 +18,38 @@ const AboutPage = () => {
           /About Us
         </h3>
       </div>
-      <div className="md:w-[90%] mx-auto pb-7 mb-10 grid grid-cols-1 md:grid-cols-2 gap-x-10">
-        <div className="relative">
+      <div className="md:w-[90%] mx-auto pb-7 mb-10 md:flex justify-between items-center">
+        <div className="relative md:w-1/2 md:mr-20">
           <Image className="rounded px-7 md:p-0" src={img2} />
-          <Image className="hidden md:block absolute top-[50%] left-[50%] md:w-[60%] border-[6px] rounded border-white" src={img1} />
+          <Image
+            className="hidden md:block absolute top-[50%] left-[50%] md:w-[60%] border-[6px] rounded border-white"
+            src={img1} height={400}
+          />
         </div>
-        <div className=""></div>
+        <div className=" px-7 md:px-0 md:w-1/2">
+          <h2 className="text-3xl font-bold pt-5 md:pt-0 md:pb-5">
+            Affordable, Reliable and Quality Car Repair Shop.
+          </h2>
+          <p className="py-3">
+            We are passionate about providing
+            top-notch car services that keep your vehicle running smoothly and
+            safely. With years of experience in the automotive industry, our
+            skilled technicians are dedicated to delivering high-quality
+            maintenance, repairs, and diagnostics to meet all your car care
+            needs. Whether it's routine maintenance, complex repairs, or
+            advanced diagnostics, we pride ourselves on offering transparent,
+            reliable, and efficient services. Customer satisfaction is at the
+            heart of everything we do, and we go the extra mile to ensure that
+            your car is treated with the utmost care. Our state-of-the-art
+            facility is equipped with the latest tools and technology, ensuring
+            that we can handle vehicles of all makes and models. From oil
+            changes and brake repairs to engine diagnostics and tire services,{" "}
+            <strong>Auto Tech</strong> is your one-stop shop for comprehensive
+            car care. Trust us to keep your car in peak condition, so you can
+            drive with confidence. At <strong>Auto Tech</strong>, we're not just
+            fixing cars—we're building trust, one vehicle at a time.
+          </p>
+        </div>
       </div>
     </div>
   );

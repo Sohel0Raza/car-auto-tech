@@ -40,7 +40,7 @@ const Navbar = () => {
       {/* top content */}
       <div className={isScrolled ? "hidden" : "block"}>
         <div className="hidden md:flex justify-between transition-all duration-500 ease-in-out">
-          <div className=" md:flex justify-between relative pointer items-center md:w-1/2 py-3 bg-black pl-7 pr-5 md:pl-16">
+          <div className=" md:flex justify-between relative pointer items-center md:w-1/2 py-3 bg-[#231F20] pl-7 pr-5 md:pl-16">
             <p className="flex items-center md:px-2">
               <MdOutlineMail className="text-xl mr-2" />
               <span className="font-semibold"> Email:</span>
@@ -68,8 +68,8 @@ const Navbar = () => {
 
       {/* navbar */}
       <div
-        className={`md:fixed z-30 w-full px-5 md:px-14  transition-all duration-500 ease-in-out ${
-          isScrolled ? "bg-white shadow-xl text-[#273036]" : "bg-[#273036] py-2"
+        className={`z-30 w-full px-5 md:px-14  transition-all duration-500 ease-in-out ${
+          isScrolled ? "bg-white shadow-xl md:fixed top-0 text-[#231F20]" : "bg-[#273036] py-2"
         }`}
       >
         <nav className="flex justify-between items-center">
